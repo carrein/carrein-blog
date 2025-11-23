@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+    @font-face {
+      font-family: 'Halibut';
+      src: url('/fonts/Halibut-Regular.woff2') format('woff2');
+    }
+    body { 
+      font-family: 'Halibut', system-ui, sans-serif;
+      line-height: 1.6;
+    }
+    img, video { max-width: 100%; height: auto; }
+    h1 { margin-bottom: 1rem; }
+    h2 { margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  {{ content | safe }}
+</body>
+</html>

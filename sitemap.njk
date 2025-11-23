@@ -1,0 +1,37 @@
+---
+layout: layout.njk
+title: Sitemap
+permalink: /sitemap/
+---
+
+<div class="max-w-3xl mx-auto px-4 py-8">
+  <h1 class="text-4xl font-bold mb-8">Sitemap</h1>
+  <p class="mb-8 text-gray-600">Everything on this site in one place.</p>
+
+  <nav class="space-y-8">
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="/" class="hover:text-blue-600">Home</a>
+      </h2>
+    </div>
+
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">Categories</h2>
+      <ul class="ml-8 space-y-4">
+        {% set categoryNames = ['film', 'music', 'personal', 'technical'] %}
+        {% for category in categoryNames %}
+          <li>
+            <a href="/posts/{{ category }}/" class="text-xl hover:text-blue-600 capitalize">{{ category }}</a>
+            <ul class="ml-8 mt-2 space-y-1">
+              {% for post in collections.all %}
+                {% if post.url.startsWith('/posts/' + category + '/') and post.data.title %}
+                  <li><a href="{{ post.url }}" class="text-gray-700 hover:text-blue-600">{{ post.data.title }}</a></li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+</div>
