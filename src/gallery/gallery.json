@@ -1,0 +1,14 @@
+{
+  "gallery": [
+    {
+      "src": "/gallery/images/a.png",
+      "alt": "Description",
+      "caption": "Photo 1"
+    },
+    {
+      "src": "/gallery/images/b.png",
+      "alt": "Description",
+      "caption": "Photo 2"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Jersey 20', system-ui, sans-serif;
+    margin: 3rem;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-family: 'Jersey 20';
+    margin-bottom: 1rem;
+}
+
+h2 {
+    margin-top: 2rem;
+}

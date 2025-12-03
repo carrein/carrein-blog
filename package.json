@@ -12,6 +12,9 @@
   },
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "bundle": "eleventy",
+    "docker:build": "docker build -t catallenya-blog .",
+    "docker:run": "docker run -p 8080:80 catallenya-blog",
+    "docker:preview": "bun docker:build && bun docker:run"
   }
 }
