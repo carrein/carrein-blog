@@ -1,0 +1,26 @@
+<slot></slot>
+
+<style webc:scoped>
+  :host {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  th {
+    font-weight: 600;
+    text-align: left;
+    border-bottom: 1px dashed #bbb;
+    padding: 0.5rem 0.8rem;
+  }
+
+  td {
+    border-left: 1px dashed #bbb;
+    border-bottom: 1px dashed #bbb;
+    padding: 0.4rem 0.8rem;
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+  }
+</style>

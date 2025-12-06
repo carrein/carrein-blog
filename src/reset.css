@@ -1,25 +1,81 @@
+@font-face {
+  font-family: 'Keiner';
+  src: url('/fonts/Keiner-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Keiner';
+  src: url('/fonts/Keiner-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Keiner';
+  src: url('/fonts/Keiner-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Keiner';
+  src: url('/fonts/Keiner-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Keiner';
+  src: url('/fonts/Keiner-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Keiner';
+  src: url('/fonts/Keiner-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Keiner';
+  src: url('/fonts/Keiner-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Jersey 20', system-ui, sans-serif;
-    margin: 3rem;
+  font-family: 'Keiner', system-ui, sans-serif;
+  font-weight: normal;
+  margin: 2rem;
+}
+
+h1 {
+  font-size: 4rem;
 }
 
 img,
 video {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
-h1 {
-    font-family: 'Jersey 20';
-    margin-bottom: 1rem;
-}
-
-h2 {
-    margin-top: 2rem;
+html {
+  scrollbar-gutter: stable;
 }

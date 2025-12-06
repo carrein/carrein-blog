@@ -16,5 +16,9 @@
     "docker:build": "docker build -t catallenya-blog .",
     "docker:run": "docker run -p 8080:80 catallenya-blog",
     "docker:preview": "bun docker:build && bun docker:run"
+  },
+  "dependencies": {
+    "@11ty/eleventy-img": "^6.0.4",
+    "@11ty/eleventy-plugin-webc": "^0.11.2"
   }
 }

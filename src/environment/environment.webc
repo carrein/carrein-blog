@@ -1,0 +1,113 @@
+---
+layout: layout.webc
+title: Environment
+---
+<row>
+  <card>
+    <table>
+      <tr>
+        <th colspan="2">Software Stack</th>
+      </tr>
+      <tr>
+        <td>Environment</td>
+        <td>
+          <flex>
+            <dot></dot>Production
+          </flex>
+        </td>
+      </tr>
+      <tr>
+        <td>Last Updated</td>
+        <td>2025-11-11</td>
+      </tr>
+      <tr>
+        <td>Site Framework</td>
+        <td>11ty</td>
+      </tr>
+      <tr>
+        <td>Version Control</td>
+        <td>Git</td>
+      </tr>
+      <tr>
+        <td>Orchestration</td>
+        <td>Docker Compose</td>
+      </tr>
+      <tr>
+        <td>Reverse Proxy</td>
+        <td>Caddy</td>
+      </tr>
+      <tr>
+        <td>Edge</td>
+        <td>Cloudflare</td>
+      </tr>
+    </table>
+  </card>
+  <card>
+    <table>
+      <tr>
+        <th colspan="2">ASRock DeskMini X600 Server</th>
+      </tr>
+      <tr>
+        <td>Form Factor</td>
+        <td>1.92L Mini-PC</td>
+      </tr>
+      <tr>
+        <td>CPU</td>
+        <td>AMD Ryzen 5 8500G</td>
+      </tr>
+      <tr>
+        <td>CPU Frequency</td>
+        <td>3.50 GHz, Base<br>5.00 GHz, Turbo</td>
+      </tr>
+      <tr>
+        <td>GPU</td>
+        <td>AMD Radeon 740M</td>
+      </tr>
+      <tr>
+        <td>RAM</td>
+        <td>Crucial 2x 16GB DDR5-5600</td>
+      </tr>
+      <tr>
+        <td>Networking</td>
+        <td>Realtek RTL8125 2.5GbE
+          <br>
+          Intel Wireless-AC 3168NGW
+        </td>
+      </tr>
+      <tr>
+        <td>OS</td>
+        <td>Ubuntu 24.04.3 LTS, Baremetal</td>
+      </tr>
+      <tr>
+        <td>Storage (OS)</td>
+        <td>Phison 500GB NVMe</td>
+      </tr>
+      <tr>
+        <td>Storage (Pool)</td>
+        <td>Lenovo 5210 ION (Micron MTFDDAK3T8QDE)
+          <br>2x 3.84TB SATA SSD, ZFS Mirror, LUKS encrypted
+        </td>
+      </tr>
+      <tr>
+        <td>Storage (Off-site)</td>
+        <td>Backblaze B2</td>
+      </tr>
+    </table>
+  </card>
+</row>
+
+<style>
+  flex {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  th {
+    color: #DB0000;
+  }
+
+  td:first-child {
+    width: 30%;
+  }
+</style>

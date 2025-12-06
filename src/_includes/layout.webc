@@ -1,0 +1,27 @@
+---
+layout: base.webc
+title: catallenya
+---
+
+<!-- <div @raw="page.url"></div> -->
+
+<column>
+  <row class="navigation-row">
+    <logo></logo>
+    <nav>
+      <navigation href="/writings" :page="page">Writings</navigation>
+      <navigation href="/gallery" :page="page">Gallery</navigation>
+      <navigation href="/environment" :page="page">Environment</navigation>
+      <navigation href="/music" :page="page">Music</navigation>
+      <navigation href="/about" :page="page">About</navigation>
+    </nav>
+  </row>
+  <div @raw="content"></div>
+</column>
+
+<style>
+  .navigation-row {
+    gap: 2rem;
+    align-items: baseline;
+  }
+</style>

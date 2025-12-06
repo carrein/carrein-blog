@@ -1,0 +1,22 @@
+<div></div>
+
+<style webc:scoped>
+  @keyframes breathe {
+
+    0%,
+    100% {
+      opacity: 0.4;
+    }
+
+    50% {
+      opacity: 1;
+    }
+  }
+
+  :host {
+    width: 6px;
+    height: 6px;
+    background: #22c55e;
+    animation: breathe 2s ease-in-out infinite;
+  }
+</style>

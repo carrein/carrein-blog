@@ -1,0 +1,14 @@
+<a :href="href" webc:keep>
+  <slot></slot>
+</a>
+
+<style webc:scoped>
+  :host {
+    cursor: pointer;
+  }
+
+  :host.active {
+    font-weight: bold;
+    text-decoration: none;
+  }
+</style>

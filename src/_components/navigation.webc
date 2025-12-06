@@ -1,0 +1,27 @@
+<a :href="href" :class="page.url.replace(/\/$/, '').startsWith(href.replace(/\/$/, '')) ? 'active' : ''">
+  <slot></slot>
+</a>
+
+<style webc:scoped>
+  :host {
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+  }
+
+  /* Default link color */
+  a {
+    color: #DB0000;
+    text-decoration: none;
+    line-height: 1.5rem;
+    display: inline-block;
+    vertical-align: baseline;
+  }
+
+  a.active {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.2rem;
+    vertical-align: baseline;
+  }
+</style>
