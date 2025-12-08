@@ -1,4 +1,4 @@
-<div></div>
+<slot></slot>
 
 <style webc:scoped>
   @keyframes breathe {

@@ -7,12 +7,11 @@
   <title @text="title"></title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="stylesheet" href="/reset.css" webc:keep>
-  <link rel="stylesheet" href="/main.css" webc:keep>
   <style @raw="getBundle('css')" webc:keep></style>
 </head>
 
 <body>
-  <div @raw="content" :@page="page"></div>
+  <slot @raw="content"></slot>
 </body>
 
 </html>
