@@ -1,11 +1,14 @@
 <h1>
-  <a href="/">
-    Catallenya
-  </a>
+  <a href="/">carrein</a>
 </h1>
 
 <style webc:scoped>
+  h1 {
+    color: #DB0000
+  }
+
   a {
+    font-size: 2.5rem;
     color: inherit;
     text-decoration: none;
     background-color: transparent;

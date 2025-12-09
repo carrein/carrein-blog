@@ -55,25 +55,13 @@
 }
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
   font-family: 'Keiner', system-ui, sans-serif;
-  font-weight: normal;
-  margin: 2rem;
-}
-
-h1 {
-  font-size: 4rem;
-}
-
-img,
-video {
-  max-width: 100%;
-  height: auto;
 }
 
 html {

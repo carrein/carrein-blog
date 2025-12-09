@@ -1,8 +1,0 @@
-<slot></slot>
-
-<style webc:scoped>
-  :host {
-    display: flex;
-    flex-direction: row;
-  }
-</style>

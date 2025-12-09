@@ -1,0 +1,21 @@
+<li webc:root="override">
+  <a :href="href" :class="page.url.replace(/\/$/, '').startsWith(href.replace(/\/$/, '')) ? 'active' : ''">
+    <slot></slot>
+  </a>
+</li>
+
+
+<style webc:scoped>
+  :host {
+    list-style-type: none;
+  }
+
+  a {
+    color: #2D383A;
+    text-decoration: none;
+  }
+
+  a.active {
+    font-weight: bold;
+  }
+</style>
