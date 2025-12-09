@@ -1,11 +1,9 @@
-<slot></slot>
-
 <style webc:scoped>
   @keyframes breathe {
 
     0%,
     100% {
-      opacity: 0.4;
+      opacity: 0.5;
     }
 
     50% {
@@ -17,6 +15,6 @@
     width: 6px;
     height: 6px;
     background: #22c55e;
-    animation: breathe 2s ease-in-out infinite;
+    animation: breathe 1s ease-in-out infinite;
   }
 </style>

@@ -1,10 +1,14 @@
 ---
 layout: layout.webc
-title: Environment
+title: environment
 ---
 <row>
   <card>
     <table>
+      <colgroup>
+        <col style="width:30%">
+        <col style="width:70%">
+      </colgroup>
       <tr>
         <th colspan="2">Software Stack</th>
       </tr>
@@ -44,6 +48,10 @@ title: Environment
   </card>
   <card>
     <table>
+      <colgroup>
+        <col style="width:30%">
+        <col style="width:70%">
+      </colgroup>
       <tr>
         <th colspan="2">ASRock DeskMini X600 Server</th>
       </tr>
@@ -98,16 +106,8 @@ title: Environment
 
 <style>
   flex {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 0.5rem;
-  }
-
-  th {
-    color: #DB0000;
-  }
-
-  td:first-child {
-    width: 30%;
   }
 </style>

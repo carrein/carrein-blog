@@ -1,0 +1,40 @@
+<article webc:root="override">
+  <a :href="post.url">
+    <slot></slot>
+  </a>
+</article>
+
+<style webc:scoped>
+  :host {
+    position: relative;
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+    height: fit-content;
+    flex: 1;
+    padding: 1rem;
+  }
+
+  :host::after {
+    content: '';
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 3px;
+    background: #DB0000;
+  }
+
+  :host::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 2px;
+    background: repeating-linear-gradient(to right, #999999 0 2px, transparent 2px 4px);
+  }
+
+  a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
+</style>

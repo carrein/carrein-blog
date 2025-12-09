@@ -1,6 +1,6 @@
 ---
 layout: base.webc
-title: catallenya
+title: carrein
 ---
 
 <!-- <div @raw="page.url"></div> -->
@@ -18,7 +18,7 @@ title: catallenya
   <div @raw="content"></div>
 </column>
 
-<style>
+<style webc:scoped>
   .navigation-row {
     gap: 2rem;
     align-items: baseline;

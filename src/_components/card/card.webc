@@ -1,16 +1,12 @@
-<slot></slot>
-
 <style webc:scoped>
   :host {
-    display: flex;
     position: relative;
     box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
-    flex: 1;
     height: fit-content;
-    min-width: 700px;
+    flex: 1;
   }
 
-  :host::before {
+  :host::after {
     content: '';
     position: absolute;
     inset: 0 auto 0 0;
@@ -18,11 +14,11 @@
     background: #DB0000;
   }
 
-  :host::after {
+  :host::before {
     content: '';
     position: absolute;
     inset: 0 0 auto 0;
-    height: 1px;
-    background: repeating-linear-gradient(to right, #888 0 2px, transparent 2px 4px);
+    height: 2px;
+    background: repeating-linear-gradient(to right, #999999 0 2px, transparent 2px 4px);
   }
 </style>
