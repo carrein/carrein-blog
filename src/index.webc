@@ -1,7 +1,31 @@
 ---
 layout: layout.webc
-title: catallenya
 ---
+<filters webc:for="tag of collections.tagList" webc:keep>
+  <!-- <script webc:type="js" webc:is="template">
+    tagList.map(category =>
+      `<filter data-filter="${category}">${category}</filter>`
+    ).join('');
+  </script> -->
+  <!-- <list-item webc:for="post of collections.tagList" webc:keep> -->
+  <filter @text="tag" webc:keep>
+    <!-- <li><a href="/tags/{{ tag }}/" @text="tag"></a></li> -->
+    <li>
+            <a :href="`/tags/${tag}/`" @text="tag"></a>
 
-<h2>Home Content</h2>
-<p>Your page content here</p>
+    </li>
+
+    <!-- <list-title @text="post.data.title" webc:keep></list-title> -->
+    <!-- <list-date datetime="@{post.data.date}" @text="post.data.displayDate" webc:keep></list-date> -->
+  </filter>
+  <!-- </list-item> -->
+</filters>
+
+<list webc:keep>
+  <list-item webc:for="post of collections.writings" webc:keep>
+    <list-card :post="post" webc:keep>
+      <list-title @text="post.data.title" webc:keep></list-title>
+      <list-date datetime="@{post.data.date}" @text="post.data.displayDate" webc:keep></list-date>
+    </list-card>
+  </list-item>
+</list>

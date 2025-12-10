@@ -1,14 +1,9 @@
 ---
 layout: layout.webc
-title: environment
 ---
 <row>
   <card>
     <table>
-      <colgroup>
-        <col style="width:30%">
-        <col style="width:70%">
-      </colgroup>
       <tr>
         <th colspan="2">Software Stack</th>
       </tr>
@@ -48,10 +43,6 @@ title: environment
   </card>
   <card>
     <table>
-      <colgroup>
-        <col style="width:30%">
-        <col style="width:70%">
-      </colgroup>
       <tr>
         <th colspan="2">ASRock DeskMini X600 Server</th>
       </tr>

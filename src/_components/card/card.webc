@@ -3,7 +3,7 @@
     position: relative;
     box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
     height: fit-content;
-    flex: 1;
+    flex: 1 1 400px;
   }
 
   :host::after {

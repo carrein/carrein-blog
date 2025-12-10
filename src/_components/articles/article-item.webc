@@ -1,0 +1,9 @@
+<h4 webc:root="override">
+  <slot></slot>
+</h4>
+
+<style webc:scoped>
+  :host {
+    list-style-type: none;
+  }
+</style>

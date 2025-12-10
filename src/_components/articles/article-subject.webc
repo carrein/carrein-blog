@@ -1,0 +1,9 @@
+<h3>
+  <slot></slot>
+</h3>
+
+<style webc:scoped>
+  h3 {
+    color: #2D383A;
+  }
+</style>

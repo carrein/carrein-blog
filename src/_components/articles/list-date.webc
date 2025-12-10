@@ -1,9 +1,0 @@
-<h6>
-  <slot></slot>
-</h6>
-
-<style webc:scoped>
-  h6 {
-    color: #DB0000
-  }
-</style>

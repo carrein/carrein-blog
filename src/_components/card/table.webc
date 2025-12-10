@@ -13,10 +13,21 @@
     color: #DB0000;
   }
 
-  td {
+  /* First column (title) */
+  td:nth-child(1) {
     border-left: 1px dashed #BBBBBB;
     border-bottom: 1px dashed #BBBBBB;
     padding: 0.4rem 0.8rem;
+    width: 30%;
+  }
+
+  /* Second column (description) */
+  td:nth-child(2) {
+    border-left: 1px dashed #BBBBBB;
+    border-bottom: 1px dashed #BBBBBB;
+    padding: 0.4rem 0.8rem;
+    width: 70%;
+    word-break: break-all;
   }
 
   tr:last-child td {

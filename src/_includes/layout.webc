@@ -5,7 +5,7 @@ layout: base.webc
   <header>
     <logo></logo>
     <nav-list>
-      <nav-item href="/writings" :page="page">writings</nav-item>
+      <nav-item href="/" :page="page">home</nav-item>
       <nav-item href="/gallery" :page="page">gallery</nav-item>
       <nav-item href="/environment" :page="page">environment</nav-item>
       <nav-item href="/music" :page="page">music</nav-item>
