@@ -1,6 +1,5 @@
 {
   "name": "11ty",
-  "module": "index.ts",
   "type": "module",
   "private": true,
   "devDependencies": {
