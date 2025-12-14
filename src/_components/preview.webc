@@ -1,0 +1,19 @@
+<div webc:root="override">
+  <template webc:type="11ty" 11ty:type="njk">
+    {% image src, "test", sizes %}
+  </template>
+</div>
+
+<style webc:scoped>
+  :host {
+    flex: 1 1 300px;
+    min-width: 0;
+    object-fit: contain;
+    width: 100%;
+  }
+
+  :host img {
+    width: 100%;
+    height: 100%;
+  }
+</style>

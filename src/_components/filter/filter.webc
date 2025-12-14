@@ -23,6 +23,6 @@
     color: #DB0000;
     font-weight: 700;
     border-color: #2D383A #f0f0f0 #f0f0f0 #2D383A;
-    padding: 5px 11px 3px 13px;
+    padding: 6px 13px 4px 15px;
   }
 </style>

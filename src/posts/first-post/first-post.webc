@@ -1,0 +1,32 @@
+---
+layout: post.webc
+subject: First Post
+date: 2023-01
+tags: [nova]
+---
+<row>
+  <preview src="./src/images/404.jpg"></preview>
+  <preview src="./src/images/404.jpg"></preview>
+</row>
+<template webc:type="11ty" 11ty:type="md">
+  # Resonance of Light and Sound
+
+  Sometimes, the smallest sparks leave the largest impressions. A fleeting glow in the evening sky, a distant echo
+  bouncing through an empty hall—these moments remind us that the world is alive in ways we often overlook.
+
+  There’s a rhythm to life that exists just beneath our awareness. A laugh that lingers, a vibration that resonates
+  through the floor, a color that shifts depending on the light—these are subtle markers of presence, tiny novae in the
+  fabric of our daily experience. Noticing them requires patience, a willingness to slow down and let the ordinary
+  become extraordinary.
+
+  Technology and noise constantly pull our attention outward, but there’s an elegance in tuning in instead of tuning
+  out. When we let ourselves observe, we discover hidden patterns: echoes of past conversations, glimmers of insight in
+  mundane routines, and flashes of creativity we didn’t realize were there.
+
+  Ultimately, the world rewards curiosity. The glow of attention, the echo of observation, the nova of discovery—they
+  are all reminders that even in chaos, there is a thread of beauty waiting to be noticed. So pause, breathe, and let
+  yourself witness the quiet magic around you.
+
+  **Thought for Today:** Close your eyes for one minute and focus on the subtle sounds, lights, or textures around you.
+  Let the unnoticed details become your guide to the present moment.
+</template>

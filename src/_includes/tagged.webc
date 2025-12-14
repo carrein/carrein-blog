@@ -1,0 +1,15 @@
+---
+layout: layout.webc
+---
+<column>
+  <escape href="/">back to all posts</escape>
+  <articles>
+    <article-item webc:for="post of collections.posts" :data-tags="post.data.tags ? post.data.tags.join(',') : ''"
+      webc:if="post.data.tags && post.data.tags.includes(tag)">
+      <article-card :post="post">
+        <h3 @text="post.data.subject"></h3>
+        <article-date datetime="@{post.data.date}" @text="post.data.displayDate"></article-date>
+      </article-card>
+    </article-item>
+  </articles>
+</column>
