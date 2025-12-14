@@ -10,9 +10,9 @@ layout: layout.webc
       <tr>
         <td>Environment</td>
         <td>
-          <flex>
+          <align>
             <dot></dot>Production
-          </flex>
+          </align>
         </td>
       </tr>
       <tr>
@@ -94,11 +94,3 @@ layout: layout.webc
     </table>
   </card>
 </row>
-
-<style>
-  flex {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-</style>
