@@ -5,13 +5,17 @@ layout: base.webc
   <header>
     <logo></logo>
     <nav-list>
-      <nav-item href="/" :page="page">home</nav-item>
-      <nav-item href="/gallery" :page="page">gallery</nav-item>
-      <nav-item href="/environment" :page="page">environment</nav-item>
-      <nav-item href="/music" :page="page">music</nav-item>
-      <nav-item href="/projects" :page="page">projects</nav-item>
-      <nav-item href="/about" :page="page">about</nav-item>
+      <nav-item href="/" :page="page">Home</nav-item>
+      <nav-item href="/gallery" :page="page">Gallery</nav-item>
+      <nav-item href="/music" :page="page">Music</nav-item>
+      <nav-item href="/projects" :page="page">Projects</nav-item>
+      <align>
+        <dot></dot>
+        <nav-item href="/environment" :page="page">Environment</nav-item>
+      </align>
+      <nav-item href="/about" :page="page">About</nav-item>
+      <nav-item href="/sitemap" :page="page">Sitemap</nav-item>
     </nav-list>
   </header>
-  <slot @raw="content"></slot>
+  <template @raw="content" webc:nokeep></template>
 </content>

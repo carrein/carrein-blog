@@ -1,0 +1,28 @@
+<a :href="href" webc:keep>
+  <slot></slot>
+</a>
+
+<style webc:scoped>
+  :host {
+    color: #000000;
+    font-size: 0.8rem;
+    padding: 5px 14px;
+    border: 2px solid;
+    border-color: #f0f0f0 #2D383A #2D383A #f0f0f0;
+    background-color: #c0c0c0;
+    cursor: pointer;
+  }
+
+  :host a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+  }
+
+  :host.active {
+    color: #DB0000;
+    font-weight: 700;
+    border-color: #2D383A #f0f0f0 #f0f0f0 #2D383A;
+    padding: 5px 11px 3px 13px;
+  }
+</style>

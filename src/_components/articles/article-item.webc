@@ -1,6 +1,4 @@
-<h4 webc:root="override">
-  <slot></slot>
-</h4>
+<slot></slot>
 
 <style webc:scoped>
   :host {

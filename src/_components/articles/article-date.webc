@@ -1,9 +1,8 @@
-<h6>
-  <slot></slot>
-</h6>
+<slot></slot>
 
 <style webc:scoped>
-  h6 {
+  :host {
+    font-size: 0.8rem;
     color: #DB0000
   }
 </style>

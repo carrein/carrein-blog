@@ -13,6 +13,10 @@
     color: #DB0000;
   }
 
+  td {
+    font-size: 0.8rem;
+  }
+
   /* First column (title) */
   td:nth-child(1) {
     border-left: 1px dashed #BBBBBB;

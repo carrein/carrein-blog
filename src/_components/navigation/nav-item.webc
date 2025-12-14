@@ -1,9 +1,9 @@
 <li webc:root="override">
-  <a :href="href" :class="page.url.replace(/\/$/, '').startsWith(href.replace(/\/$/, '')) ? 'active' : ''">
+  <a :href="href"
+    :class="(href === '/' ? page.url === '/' : page.url.replace(/\/$/, '') === href.replace(/\/$/, '')) ? 'active' : ''">
     <slot></slot>
   </a>
 </li>
-
 
 <style webc:scoped>
   :host {
@@ -16,6 +16,6 @@
   }
 
   a.active {
-    font-weight: bold;
+    font-weight: 700;
   }
 </style>

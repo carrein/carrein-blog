@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title @text="title">carrein</title>
+  <title @text="title">Carrein</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="stylesheet" href="/reset.css" webc:keep>
   <style @raw="getBundle('css')" webc:keep></style>
 </head>
 
 <body>
-  <slot @raw="content"></slot>
+  <template @raw="content" webc:nokeep></template>
 </body>
 
 </html>

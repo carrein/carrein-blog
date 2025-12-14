@@ -1,0 +1,11 @@
+<a href="/" webc:root="override">
+  <slot></slot> ⤴
+</a>
+
+<style webc:scoped>
+  :host {
+    font-size: 0.8rem;
+    color: #DB0000;
+    text-decoration: none;
+  }
+</style>

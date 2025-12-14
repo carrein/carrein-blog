@@ -1,0 +1,32 @@
+---
+layout: layout.webc
+title: "404 Lost!"
+---
+
+<column>
+  <row>
+    <preview src="./src/images/404.jpg"></preview>
+    <card>
+      <table>
+        <colgroup>
+          <col style="width:30%">
+          <col style="width:70%">
+        </colgroup>
+        <tr>
+          <th colspan="2">
+            <h1>
+              <template webc:type="11ty" 11ty:type="njk">
+                {{ title }}
+              </template>
+            </h1>
+          </th>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <escape href="/">let's go home</escape>
+          </td>
+        </tr>
+      </table>
+    </card>
+  </row>
+</column>
