@@ -1,31 +1,85 @@
 ---
 layout: layout.webc
 ---
-<filters webc:for="tag of collections.tagList" webc:keep>
-  <!-- <script webc:type="js" webc:is="template">
-    tagList.map(category =>
-      `<filter data-filter="${category}">${category}</filter>`
-    ).join('');
-  </script> -->
-  <!-- <list-item webc:for="post of collections.tagList" webc:keep> -->
-  <filter @text="tag" webc:keep>
-    <!-- <li><a href="/tags/{{ tag }}/" @text="tag"></a></li> -->
-    <li>
-            <a :href="`/tags/${tag}/`" @text="tag"></a>
+<column>
+  <filters>
+    <filter webc:for="tag of collections.tagList" :href="`/tagged/${tag}`" @text="tag" onclick="onFilterClick(event)">
+    </filter>
+  </filters>
+  <articles>
+    <article-item webc:for="post of collections.posts" :data-tags="post.data.tags ? post.data.tags.join(',') : ''">
+      <article-card :post="post">
+        <h3 @text="post.data.subject"></h3>
+        <article-date datetime="@{post.data.date}" @text="post.data.displayDate"></article-date>
+      </article-card>
+    </article-item>
+  </articles>
+</column>
 
-    </li>
+<script webc:keep>
+  // Get active tags from URL
+  function getActiveTags() {
+    return new URLSearchParams(location.search).get("tags")?.split(",") || [];
+  }
 
-    <!-- <list-title @text="post.data.title" webc:keep></list-title> -->
-    <!-- <list-date datetime="@{post.data.date}" @text="post.data.displayDate" webc:keep></list-date> -->
-  </filter>
-  <!-- </list-item> -->
-</filters>
+  // Handle tag click and update URL.
+  window.onFilterClick = function (event) {
+    event.preventDefault();
 
-<list webc:keep>
-  <list-item webc:for="post of collections.writings" webc:keep>
-    <list-card :post="post" webc:keep>
-      <list-title @text="post.data.title" webc:keep></list-title>
-      <list-date datetime="@{post.data.date}" @text="post.data.displayDate" webc:keep></list-date>
-    </list-card>
-  </list-item>
-</list>
+    const filter = event.currentTarget;
+    const tag = filter.textContent.trim();
+
+    const url = new URL(window.location);
+    const params = url.searchParams;
+
+    let current = getActiveTags();
+
+    // toggle tag in list and update class
+    if (current.includes(tag)) {
+      current = current.filter(t => t !== tag);
+      filter.classList.remove("active");
+    } else {
+      current.push(tag);
+      filter.classList.add("active");
+    }
+
+    // Update browser URL.
+    if (current.length) {
+      params.set("tags", current.join(","));
+    } else {
+      params.delete("tags");
+    }
+
+    history.pushState({}, "", url);
+
+    // Filter articles based on active tags.
+    window.filterArticlesByTags();
+  };
+
+  // Sync active filters from URL on load or navigation.
+  window.syncFiltersFromURL = function () {
+    const activeTags = getActiveTags();
+
+    document.querySelectorAll("filter").forEach(filter => {
+      const tag = filter.textContent.trim();
+      filter.classList.toggle("active", activeTags.includes(tag));
+    });
+
+    window.filterArticlesByTags();
+  };
+
+  // Toggle article visibility based on active tags.
+  window.filterArticlesByTags = function () {
+    const activeTags = getActiveTags();
+
+    document.querySelectorAll("article-item").forEach(article => {
+      const articleTags = article.dataset.tags?.split(",") || [];
+      // Hide if no active tag is in articleTags.
+      article.hidden = activeTags.length > 0 && !activeTags.some(tag => articleTags.includes(tag));
+    });
+  };
+
+  // Initialize filters on DOM load and browser navigation.
+  window.addEventListener("DOMContentLoaded", window.syncFiltersFromURL);
+  window.addEventListener("popstate", window.syncFiltersFromURL);
+</script>

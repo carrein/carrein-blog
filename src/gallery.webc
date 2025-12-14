@@ -1,0 +1,12 @@
+---
+layout: layout.webc
+---
+<template webc:type="11ty" 11ty:type="njk">
+  <masonry>
+    {% for image in collections.gallery %}
+    <a href="{{ image.outputSrc }}" target="_blank" rel="noopener noreferrer">
+      <preview src="{{ image.src }}" sizes="preview"></preview>
+    </a>
+    {% endfor %}
+  </masonry>
+</template>

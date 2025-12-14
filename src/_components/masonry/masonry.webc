@@ -1,0 +1,31 @@
+<style webc:scoped>
+  :host {
+    gap: 0;
+    column-count: 3;
+    width: 100%;
+  }
+
+  :host>* {
+    display: block;
+    break-inside: avoid;
+  }
+
+  :host img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  @media (max-width: 767px) {
+    :host {
+      column-count: 2;
+    }
+  }
+
+  @media (max-width: 539px) {
+    :host {
+      column-count: 1;
+    }
+  }
+</style>
