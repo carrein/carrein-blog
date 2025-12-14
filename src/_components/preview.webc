@@ -1,6 +1,6 @@
 <div webc:root="override">
   <template webc:type="11ty" 11ty:type="njk">
-    {% image src, "test", sizes %}
+    {% image src, sizes, alt %}
   </template>
 </div>
 

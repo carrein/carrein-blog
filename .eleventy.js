@@ -16,13 +16,15 @@ export default (eleventyConfig) => {
 
   eleventyConfig.addAsyncShortcode(
     "image",
-    async (src, alt, sizes = "(min-width: 40em) 80vw, 30vw") => {
+    async (src, sizes = "(min-width: 40em) 80vw, 30vw", alt = "") => {
       const IMAGE_FORMATS = ["avif", "webp", "jpeg"];
       const OUTPUT_DIR = "./_site/image/";
       const URL_PATH = "/image/";
 
-      const widths = sizes === "preview" ? [400] : [750, 1500, 2250];
-      const finalSizes = sizes === "preview" ? "400px" : sizes;
+      // Portraits: 1280px on short edge.
+      // Landscapes: 1280px on the long edge.
+      const widths = sizes === "preview" ? [1280] : [1280, 1440, 1920];
+      const finalSizes = sizes === "preview" ? "1280px" : sizes;
 
       const metadata = await Image(src, {
         widths,
