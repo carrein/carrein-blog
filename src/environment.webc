@@ -21,7 +21,7 @@ layout: layout.webc
       </tr>
       <tr>
         <td>Site Framework</td>
-        <td>11ty</td>
+        <td>11ty *</td>
       </tr>
       <tr>
         <td>Version Control</td>
@@ -38,6 +38,13 @@ layout: layout.webc
       <tr>
         <td>Edge</td>
         <td>Cloudflare</td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <b>
+            * The site is JavaScript optional!
+          </b>
+        </td>
       </tr>
     </table>
   </card>
