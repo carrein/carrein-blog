@@ -1,4 +1,18 @@
 ---
-layout: 404.webc
-title: "Still Scaffolding..."
+layout: layout.webc
 ---
+<row>
+  <card>
+    <table>
+      <tr>
+        <th colspan="2">Projects</th>
+      </tr>
+      <tr>
+        <td>
+          <escape href="https://github.com/carrein/liquidroom">liquidroom</escape>
+        </td>
+        <td>liquidroom is a collection of scripts that invokes audio-separator to manipulate audio stems.</td>
+      </tr>
+    </table>
+  </card>
+</row>

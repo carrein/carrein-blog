@@ -36,3 +36,6 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 
 # 11ty output
 _site
+
+# vscode
+.vscode/

@@ -1,0 +1,23 @@
+<div webc:root="override">
+  <template webc:type="11ty" 11ty:type="njk">
+    {% if src %}
+    {% set imgSrc = src %}
+    {% set imgAlt = alt or '' %}
+
+    {% image imgSrc, "thumbnail", imgAlt %}
+    {% endif %}
+  </template>
+</div>
+
+<style webc:scoped>
+  picture {
+    display: flex;
+  }
+
+  img {
+    max-width: 80px;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+</style>

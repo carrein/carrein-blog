@@ -8,9 +8,12 @@ layout: layout.webc
   </filters>
   <articles>
     <article-item webc:for="post of collections.posts" :data-tags="post.data.tags ? post.data.tags.join(',') : ''">
-      <article-card :post="post">
-        <h3 @text="post.data.subject"></h3>
-        <article-date datetime="@{post.data.date}" @text="post.data.displayDate"></article-date>
+      <article-card :url="post.url">
+        <thumbnail :src="post.data.thumbnail" :alt="post.data.subject"></thumbnail>
+        <column style="--gap: 0.2rem;">
+          <h2 @text="post.data.subject"></h2>
+          <article-date @text="post.data.displayDate"></article-date>
+        </column>
       </article-card>
     </article-item>
   </articles>

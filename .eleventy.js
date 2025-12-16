@@ -16,15 +16,22 @@ export default (eleventyConfig) => {
 
   eleventyConfig.addAsyncShortcode(
     "image",
-    async (src, sizes = "(min-width: 40em) 80vw, 30vw", alt = "") => {
+    async (src, size = "default", alt = "") => {
       const IMAGE_FORMATS = ["avif", "webp", "jpeg"];
       const OUTPUT_DIR = "./_site/image/";
       const URL_PATH = "/image/";
 
-      // Portraits: 1280px on short edge.
-      // Landscapes: 1280px on the long edge.
-      const widths = sizes === "preview" ? [1280] : [1280, 1440, 1920];
-      const finalSizes = sizes === "preview" ? "1280px" : sizes;
+      // Define width and sizes for each type
+      const sizeMap = {
+        thumbnail: { widths: [200], finalSizes: "200px" },
+        preview: { widths: [960], finalSizes: "960px" },
+        default: {
+          widths: [1280, 1440, 1920],
+          finalSizes: "(min-width: 40em) 80vw, 30vw",
+        },
+      };
+
+      const { widths, finalSizes } = sizeMap[size] || sizeMap.default;
 
       const metadata = await Image(src, {
         widths,

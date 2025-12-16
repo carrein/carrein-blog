@@ -1,8 +1,6 @@
 <article webc:root="override">
-  <a :href="post.url">
-    <row>
-      <slot></slot>
-    </row>
+  <a :href="url">
+    <slot></slot>
   </a>
 </article>
 
@@ -31,15 +29,12 @@
   }
 
   a {
+    display: flex;
     color: inherit;
     text-decoration: none;
     cursor: pointer;
-  }
-
-  row {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem 1rem 0.7rem 1rem;
   }
 </style>

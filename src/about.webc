@@ -5,12 +5,13 @@ layout: layout.webc
   <preview src="./src/images/about.jpg"></preview>
   <card>
     <table>
-      <colgroup>
-        <col style="width:30%">
-        <col style="width:70%">
-      </colgroup>
       <tr>
         <th colspan="2">Addison</th>
+      </tr>
+      <tr>
+        <td colspan="2">
+          Purveyor and curator of many useless tibits.
+        </td>
       </tr>
       <tr>
         <td>Email
