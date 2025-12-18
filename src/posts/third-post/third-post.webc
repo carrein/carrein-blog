@@ -3,6 +3,7 @@ layout: post.webc
 subject: Third Post
 date: 2025-01
 tags: [nova, glow, buzz]
+thumbnail: "./src/images/404.jpg"
 ---
 <template webc:type="11ty" 11ty:type="md">
   # Embracing Serenity in Everyday Life

@@ -1,5 +1,6 @@
 ---
-layout: layout.webc
+layout: 404.webc
+title: "Still Scaffolding..."
 ---
 <column>
   <filters>
