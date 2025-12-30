@@ -1,4 +1,7 @@
 ---
-layout: 404.webc
-title: "Still Scaffolding..."
+layout: layout.webc
 ---
+<grid>
+  <youtube id="rL4An7mahMo"></youtube>
+  <youtube id="xTk8ZXDeib4"></youtube>
+</grid>

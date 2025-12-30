@@ -1,0 +1,10 @@
+<iframe class="yt" :src="`https://www.youtube.com/embed/${id}`" allowfullscreen></iframe>
+
+<style webc:scoped>
+  .yt {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    display: block;
+  }
+</style>

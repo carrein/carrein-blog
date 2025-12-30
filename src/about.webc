@@ -10,7 +10,7 @@ layout: layout.webc
       </tr>
       <tr>
         <td colspan="2">
-          Purveyor and curator of many useless tibits.
+          Reach out I don't bite.
         </td>
       </tr>
       <tr>
@@ -48,6 +48,12 @@ layout: layout.webc
         <td>Steam</td>
         <td>
           <escape href="https://steamcommunity.com/id/carrein/">steamcommunity.com/id/carrein/</escape>
+        </td>
+      </tr>
+      <tr>
+        <td>Food Map</td>
+        <td>
+          <escape href="https://maps.app.goo.gl/vtbqSiZAfyufWTVd7">maps.app.goo.gl/vtbqSiZAfyufWTVd7</escape>
         </td>
       </tr>
     </table>
