@@ -1,0 +1,9 @@
+<style webc:scoped>
+  :host {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+  }
+</style>

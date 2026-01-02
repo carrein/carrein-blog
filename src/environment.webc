@@ -90,8 +90,8 @@ layout: layout.webc
       </tr>
       <tr>
         <td>Storage (Pool)</td>
-        <td>Lenovo 5210 ION (Micron MTFDDAK3T8QDE)
-          <br>2x 3.84TB SATA SSD, ZFS Mirror, LUKS encrypted
+        <td>Lenovo 5210 (Micron MTFDDAK3T8QDE)
+          <br>2x 3.84TB SATA SSD, ZFS + LUKS
         </td>
       </tr>
       <tr>

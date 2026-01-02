@@ -31,7 +31,7 @@
     border-bottom: 1px dashed #BBBBBB;
     padding: 0.4rem 0.8rem;
     width: 70%;
-    word-break: break-all;
+    word-break: break-word;
   }
 
   tr:last-child td {

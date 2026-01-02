@@ -1,0 +1,56 @@
+---
+layout: layout.webc
+---
+<row-gap>
+  <preview src="./src/about/about.jpg"></preview>
+  <card>
+    <table>
+      <tr>
+        <th colspan="2">Addison</th>
+      </tr>
+      <tr>
+        <td>Email
+        </td>
+        <td>
+          <escape href="mailto:carreinlee@proton.me">carreinlee@proton.me</escape>
+        </td>
+      </tr>
+      <tr>
+        <td>Github</td>
+        <td>
+          <escape href="https://github.com/carrein">github.com/carrein</escape>
+        </td>
+      </tr>
+      <tr>
+        <td>RYM</td>
+        <td>
+          <escape href="https://rateyourmusic.com/~carrein">rateyourmusic.com/~carrein</escape>
+        </td>
+      </tr>
+      <tr>
+        <td>Linkedin</td>
+        <td>
+          <escape href="https://linkedin.com/in/addison-ho">linkedin.com/in/addison-ho</escape>
+        </td>
+      </tr>
+      <tr>
+        <td>Letterboxd</td>
+        <td>
+          <escape href="https://letterboxd.com/carrein">letterboxd.com/carrein</escape>
+        </td>
+      </tr>
+      <tr>
+        <td>Steam</td>
+        <td>
+          <escape href="https://steamcommunity.com/id/carrein/">steamcommunity.com/id/carrein/</escape>
+        </td>
+      </tr>
+      <tr>
+        <td>Food Map</td>
+        <td>
+          <escape href="https://maps.app.goo.gl/vtbqSiZAfyufWTVd7">maps.app.goo.gl/vtbqSiZAfyufWTVd7</escape>
+        </td>
+      </tr>
+    </table>
+  </card>
+</row-gap>

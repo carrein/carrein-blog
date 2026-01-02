@@ -4,17 +4,15 @@ title: "404 Lost!"
 ---
 
 <column>
-  <row>
-    <preview src="./src/images/404.jpg"></preview>
+  <row-gap>
+    <preview src="./src/404/404.jpg"></preview>
     <card>
       <table>
         <tr>
           <th colspan="2">
-            <h1>
-              <template webc:type="11ty" 11ty:type="njk">
-                {{ title }}
-              </template>
-            </h1>
+            <template webc:type="11ty" 11ty:type="njk">
+              {{ title }}
+            </template>
           </th>
         </tr>
         <tr>
@@ -24,5 +22,5 @@ title: "404 Lost!"
         </tr>
       </table>
     </card>
-  </row>
+  </row-gap>
 </column>

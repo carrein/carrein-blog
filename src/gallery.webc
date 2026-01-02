@@ -4,11 +4,11 @@ layout: layout.webc
 
 <template webc:type="11ty" 11ty:type="njk">
   <masonry id="gallery">
-    {%- for img in collections.gallery %}
+    {%- for img in collections.gallery -%}
     <a href="{{ img.outputSrc }}" target="_blank" rel="noopener">
       <preview src="{{ img.src }}" sizes="preview"></preview>
     </a>
-    {%- endfor %}
+    {%- endfor -%}
   </masonry>
 </template>
 

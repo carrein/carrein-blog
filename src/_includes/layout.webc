@@ -5,14 +5,14 @@ layout: base.webc
   <header>
     <logo></logo>
     <nav-list>
-      <nav-item href="/" :page="page">Home</nav-item>
+      <nav-item href="/" :page="page">Writings</nav-item>
       <nav-item href="/gallery" :page="page">Gallery</nav-item>
       <nav-item href="/music" :page="page">Music</nav-item>
       <nav-item href="/projects" :page="page">Projects</nav-item>
-      <align>
+      <middle>
         <dot></dot>
         <nav-item href="/environment" :page="page">Environment</nav-item>
-      </align>
+      </middle>
       <nav-item href="/about" :page="page">About</nav-item>
       <nav-item href="/sitemap" :page="page">Sitemap</nav-item>
     </nav-list>
