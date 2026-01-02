@@ -1,18 +1,18 @@
 ---
-layout: 404.webc
-title: "Still Scaffolding..."
+layout: layout.webc
 ---
+
 <column>
-  <filters>
+  <!-- <filters>
     <filter webc:for="tag of collections.tagList" :href="`/tagged/${tag}`" @text="tag" onclick="onFilterClick(event)">
     </filter>
-  </filters>
+  </filters> -->
   <articles>
     <article-item webc:for="post of collections.posts" :data-tags="post.data.tags ? post.data.tags.join(',') : ''">
       <article-card :url="post.url">
         <thumbnail webc:if="post.data.thumbnail" :src="post.data.thumbnail" :alt="post.data.subject"></thumbnail>
         <column style="--gap: 0.2rem;">
-          <h2 @text="post.data.subject"></h2>
+          <article-title @text="post.data.subject"></article-title>
           <article-date @text="post.data.displayDate"></article-date>
         </column>
       </article-card>

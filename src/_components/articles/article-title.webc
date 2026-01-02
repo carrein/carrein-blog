@@ -1,0 +1,10 @@
+<slot></slot>
+
+<style webc:scoped>
+  :host {
+    font-size: 1.5rem;
+    font-weight: 600;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+</style>

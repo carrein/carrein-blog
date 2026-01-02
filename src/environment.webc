@@ -1,7 +1,7 @@
 ---
 layout: layout.webc
 ---
-<row>
+<row-gap>
   <card>
     <table>
       <tr>
@@ -10,9 +10,9 @@ layout: layout.webc
       <tr>
         <td>Environment</td>
         <td>
-          <align>
+          <middle>
             <dot></dot>Production
-          </align>
+          </middle>
         </td>
       </tr>
       <tr>
@@ -100,4 +100,4 @@ layout: layout.webc
       </tr>
     </table>
   </card>
-</row>
+</row-gap>

@@ -10,6 +10,10 @@ export default (eleventyConfig) => {
     "src/images/gallery": "images/gallery",
   });
 
+  eleventyConfig.addPassthroughCopy(
+    "src/posts/**/*.{jpg,jpeg,png,webp,avif,gif,svg}"
+  );
+
   eleventyConfig.addPlugin(pluginWebc, {
     components: ["src/_components/**/*.webc"],
   });
@@ -26,8 +30,8 @@ export default (eleventyConfig) => {
         thumbnail: { widths: [200], finalSizes: "200px" },
         preview: { widths: [960], finalSizes: "960px" },
         default: {
-          widths: [1280, 1440, 1920],
-          finalSizes: "(min-width: 40em) 80vw, 30vw",
+          widths: [1280, 1920],
+          finalSizes: "(min-width: 40em) 50vw, 30vw",
         },
       };
 
@@ -55,7 +59,7 @@ export default (eleventyConfig) => {
         new Date(d)
       );
 
-    const posts = collection.getFilteredByGlob("src/posts/**/*.webc");
+    const posts = collection.getFilteredByGlob("src/posts/**/*.md");
 
     posts.forEach((post) => {
       post.data = {
@@ -92,5 +96,6 @@ export default (eleventyConfig) => {
       output: "_site",
       includes: "_includes",
     },
+    markdownTemplateEngine: "webc",
   };
 };

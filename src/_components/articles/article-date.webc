@@ -3,6 +3,6 @@
 <style webc:scoped>
   :host {
     font-size: 0.8rem;
-    color: #DB0000
+    color: #DB0000;
   }
 </style>
