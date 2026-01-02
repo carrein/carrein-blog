@@ -2,11 +2,11 @@
 layout: layout.webc
 ---
 
-<column>
-  <!-- <filters>
+<column-gap>
+  <filters>
     <filter webc:for="tag of collections.tagList" :href="`/tagged/${tag}`" @text="tag" onclick="onFilterClick(event)">
     </filter>
-  </filters> -->
+  </filters>
   <articles>
     <article-item webc:for="post of collections.posts" :data-tags="post.data.tags ? post.data.tags.join(',') : ''">
       <article-card :url="post.url">
@@ -18,7 +18,7 @@ layout: layout.webc
       </article-card>
     </article-item>
   </articles>
-</column>
+</column-gap>
 
 <script webc:keep>
   // Get active tags from URL

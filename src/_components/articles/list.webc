@@ -1,0 +1,18 @@
+<ul webc:root="override">
+  <slot></slot>
+</ul>
+
+<style webc:scoped>
+  :host {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style-position: outside;
+    padding-left: 1.2em;
+    list-style-type: square;
+  }
+
+  li {
+    line-height: 1.5;
+  }
+</style>

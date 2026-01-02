@@ -1,7 +1,7 @@
 ---
 layout: layout.webc
 ---
-<row>
+<row-gap>
   <card>
     <table>
       <tr>
@@ -15,4 +15,4 @@ layout: layout.webc
       </tr>
     </table>
   </card>
-</row>
+</row-gap>
