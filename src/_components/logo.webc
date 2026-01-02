@@ -1,13 +1,14 @@
 <a href="/">
-  <h1>
+  <span>
     Carrein
-  </h1>
+  </span>
 </a>
 
 <style webc:scoped>
-  h1 {
+  span {
     font-size: 3rem;
-    color: #DB0000
+    font-weight: 600;
+    color: #DB0000;
   }
 
   a {

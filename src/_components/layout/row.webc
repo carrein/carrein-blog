@@ -1,8 +1,0 @@
-<style webc:scoped>
-  :host {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: var(--gap, 1rem);
-  }
-</style>
