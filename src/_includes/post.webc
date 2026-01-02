@@ -3,5 +3,7 @@ layout: layout.webc
 ---
 <column>
   <escape href="/">back to all posts</escape>
-  <template @raw="content" webc:nokeep></template>
+  <div>
+    <template @raw="content" webc:nokeep></template>
+  </div>
 </column>

@@ -1,0 +1,9 @@
+<caption webc:root="override">
+  <slot></slot>
+</caption>
+
+<style webc:scoped>
+  :host {
+    font-size: 0.8rem;
+  }
+</style>

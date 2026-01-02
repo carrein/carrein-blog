@@ -1,0 +1,17 @@
+<span aria-hidden="true"></span>
+<slot></slot>
+
+<style webc:scoped>
+  :host {
+    display: flex;
+    gap: 1rem;
+    height: fit-content;
+    font-family: 'Keiner', system-ui, sans-serif;
+    font-style: italic;
+  }
+
+  span {
+    min-width: 2px;
+    background: #DB0000;
+  }
+</style>

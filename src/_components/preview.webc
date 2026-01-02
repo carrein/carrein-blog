@@ -6,7 +6,6 @@
 
 <style webc:scoped>
   :host {
-    flex: 1 1 300px;
     min-width: 0;
     object-fit: contain;
     width: 100%;
