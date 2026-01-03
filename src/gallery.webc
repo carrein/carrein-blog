@@ -13,19 +13,20 @@ layout: layout.webc
 </template>
 
 <script webc:keep>
-  // Shuffle gallery images on refresh.
   window.addEventListener('DOMContentLoaded', () => {
-    const gallery = document.getElementById('gallery');
-    if (!gallery) return;
+    requestAnimationFrame(() => {
+      const gallery = document.getElementById('gallery');
+      if (!gallery) return;
 
-    const items = Array.from(gallery.children);
-    if (items.length < 2) return;
+      const items = Array.from(gallery.children);
+      if (items.length < 2) return;
 
-    for (let i = items.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [items[i], items[j]] = [items[j], items[i]];
-    }
+      for (let i = items.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [items[i], items[j]] = [items[j], items[i]];
+      }
 
-    gallery.append(...items);
+      gallery.append(...items);
+    });
   });
 </script>
