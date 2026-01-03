@@ -9,6 +9,13 @@ layout: layout.webc
         <th colspan="2">Addison</th>
       </tr>
       <tr>
+        <td colspan="2">
+          <middle>
+            <dot></dot>Alive
+          </middle>
+        </td>
+      </tr>
+      <tr>
         <td>Email
         </td>
         <td>

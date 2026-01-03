@@ -16,31 +16,29 @@
 
   /* Match column widths for headers */
   th:nth-child(1) {
-    width: 30%;
+    width: 32%;
   }
 
   th:nth-child(2) {
-    width: 70%;
+    width: 68%;
   }
 
   td {
     font-size: 0.8rem;
   }
 
-  /* First column (title) */
   td:nth-child(1) {
     border-left: 1px dashed #BBBBBB;
     border-bottom: 1px dashed #BBBBBB;
     padding: 0.6rem 0.8rem;
-    width: 30%;
+    width: 32%;
   }
 
-  /* Second column (description) */
   td:nth-child(2) {
     border-left: 1px dashed #BBBBBB;
     border-bottom: 1px dashed #BBBBBB;
     padding: 0.6rem 0.8rem;
-    width: 70%;
+    width: 68%;
     word-break: break-word;
   }
 

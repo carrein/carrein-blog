@@ -40,6 +40,13 @@ layout: layout.webc
         <td>Cloudflare</td>
       </tr>
       <tr>
+        <td>Server Location
+        </td>
+        <td>
+          Singapore
+        </td>
+      </tr>
+      <tr>
         <td colspan="2">
           <b>
             * The site is JavaScript optional!
@@ -95,7 +102,7 @@ layout: layout.webc
         </td>
       </tr>
       <tr>
-        <td>Storage (Off-site)</td>
+        <td>Storage (Offsite)</td>
         <td>Backblaze B2</td>
       </tr>
     </table>

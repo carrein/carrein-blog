@@ -15,6 +15,6 @@
     width: 6px;
     height: 6px;
     background: #22c55e;
-    animation: breathe 1s ease-in-out infinite;
+    animation: breathe 2s ease-in-out infinite;
   }
 </style>
