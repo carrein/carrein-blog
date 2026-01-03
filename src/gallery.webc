@@ -15,6 +15,7 @@ layout: layout.webc
 <script webc:keep>
   window.addEventListener('DOMContentLoaded', () => {
     requestAnimationFrame(() => {
+      console.log('test');
       const gallery = document.getElementById('gallery');
       if (!gallery) return;
 
