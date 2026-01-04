@@ -13,19 +13,22 @@ layout: layout.webc
 </template>
 
 <script webc:keep>
-  const observer = new MutationObserver(() => {
-    const gallery = document.getElementById('gallery');
-    if (!gallery || gallery.children.length < 2) return;
+  const shuffle = (container) => {
+    const items = Array.from(container.children);
+    if (items.length < 2) return;
 
-    observer.disconnect();
-
-    const items = Array.from(gallery.children);
     for (let i = items.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [items[i], items[j]] = [items[j], items[i]];
     }
-    gallery.append(...items);
-  });
 
-  observer.observe(document.body, { childList: true, subtree: true });
+    container.append(...items);
+  };
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const gallery = document.getElementById("gallery");
+    if (!gallery || gallery.children.length < 2) return;
+
+    shuffle(gallery);
+  });
 </script>

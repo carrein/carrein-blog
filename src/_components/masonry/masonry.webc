@@ -15,6 +15,7 @@
     height: auto;
     display: block;
     object-fit: cover;
+    content-visibility: auto;
   }
 
   @media (max-width: 767px) {

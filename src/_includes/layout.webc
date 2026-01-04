@@ -14,7 +14,6 @@ layout: base.webc
         <nav-item href="/environment" :page="page">Environment</nav-item>
       </middle>
       <nav-item href="/about" :page="page">About</nav-item>
-      <nav-item href="/sitemap" :page="page">Sitemap</nav-item>
     </nav-list>
   </header>
   <template @raw="content" webc:nokeep></template>
