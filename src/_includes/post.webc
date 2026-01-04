@@ -3,7 +3,13 @@ layout: layout.webc
 ---
 <column>
   <escape href="/">back to all posts</escape>
-  <div>
+  <div class="full-width">
     <template @raw="content" webc:nokeep></template>
   </div>
 </column>
+
+<style>
+  .full-width {
+    width: 100%;
+  }
+</style>
