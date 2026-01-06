@@ -2,10 +2,6 @@
 layout: layout.webc
 ---
 <grid>
-  <video controls style="width:100%;aspect-ratio:16/9">
-    <source src="https://beam.catallenya.com/raw/Yokaze001.mov">
-  </video>
-  <video controls style="width:100%;aspect-ratio:16/9">
-    <source src="https://beam.catallenya.com/raw/Telephone000.mov">
-  </video>
+  <youtube id="rL4An7mahMo"></youtube>
+  <youtube id="xTk8ZXDeib4"></youtube>
 </grid>
